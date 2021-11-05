@@ -1,0 +1,9 @@
+name: fnd_gui
+channels:
+  - defaults
+dependencies:
+  - beautifulsoup4
+  - notebook
+  - requests
+  - ipywidgets
+  - voila

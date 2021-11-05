@@ -1,9 +1,0 @@
-name: voila-gallery-country-indicators
-channels:
-- conda-forge
-dependencies:
-- ipywidgets
-- requests
-- beautifulsoup4
-- jupyterlab
-- voila
