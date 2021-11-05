@@ -2,8 +2,8 @@ name: voila-gallery-country-indicators
 channels:
 - conda-forge
 dependencies:
-- ipywidgets==7.6.5
-- requests==2.24.0
-- beautifulsoup4==4.9.3
-- notebook==6.4.5
-- voila==0.2.16
+- ipywidgets
+- requests
+- beautifulsoup4
+- notebook
+- voila
