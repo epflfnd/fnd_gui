@@ -5,5 +5,5 @@ dependencies:
 - ipywidgets
 - requests
 - beautifulsoup4
-- notebook
+- jupyterlab
 - voila
