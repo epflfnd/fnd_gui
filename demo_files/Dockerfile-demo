@@ -1,0 +1,12 @@
+FROM tensorflow/tensorflow:latest-gpu-py3
+
+COPY requirements.txt /tmp/
+
+RUN pip install --upgrade pip && \
+	pip install cython && \ 
+	pip install -r /tmp/requirements.txt && \
+	pip install --upgrade protobuf
+
+RUN python -c "import nltk; nltk.download('punkt')"
+
+CMD streamlit run /home/code/demo.py --server.port 8502

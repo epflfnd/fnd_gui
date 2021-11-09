@@ -1,0 +1,19 @@
+version: '2.3'
+services:
+  demo:
+    build:
+        context: .
+        dockerfile: Dockerfile-demo
+    image: demo_fnd:1.0
+    container_name: demo_fnd
+    ports:
+        - "8502:8502"
+    volumes:
+        - ${CODE_PATH}:/home/code
+        - ${DATA_PATH}:/home/data
+        - ${MODEL_PATH}:/home/model
+    working_dir: /home
+    runtime: nvidia
+    environment:
+        - NVIDIA_VISIBLE_DEVICES=${GPU}
+
